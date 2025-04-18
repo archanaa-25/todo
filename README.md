@@ -23,6 +23,6 @@ This is a responsive, real-time TODO application that allows users to manage the
 - Git
 - Browser (latest version recommended)
 
-_Made With ❤️ By Archanaa
+_Made With ❤️ By Archanaa 
 A personal project to learn and explore React and Firebase.
 Inspired by daily task struggles and the love of productivity tools! 😄_
