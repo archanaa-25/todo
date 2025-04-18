@@ -7,7 +7,6 @@
 
 body {
   background: linear-gradient(135deg, #000000, #1a0033, #4a0072, #990066);
-  /* background-color: white; */
   background-attachment: fixed;
   min-height: 100vh;
   padding: 20px;
@@ -91,7 +90,6 @@ ul {
   padding: 0;
 }
 
-/* For a clean look on mobile */
 @media (max-width: 600px) {
   form {
     flex-direction: column;
@@ -106,5 +104,37 @@ ul {
   
   .MuiButton-contained {
     width: 100%;
+  }
+}
+
+/* Add these styles to your existing App.css */
+
+.date-display {
+  text-align: left;
+  margin: 20px 0 25px 0;
+  
+  width: fit-content;
+}
+
+.current-day {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current-date {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* For mobile responsiveness */
+@media (max-width: 600px) {
+  .date-display {
+    width: 100%;
+    text-align: center;
   }
 }

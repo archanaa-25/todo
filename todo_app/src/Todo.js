@@ -47,7 +47,7 @@ function Todo(props) {
       </Modal>
       <List className="todo_list">
         <ListItem>
-          <ListItemText primary={props.todo.todo} secondary="Dummy deadline"/>
+          <ListItemText primary={props.todo.todo}/>
         </ListItem>
         <button onClick={e => setOpen(true)}>Edit</button>
         <DoneRoundedIcon onClick={event=> {db.collection('todos').doc(props.todo.id).delete()}} />
