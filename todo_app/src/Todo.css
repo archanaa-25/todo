@@ -1,3 +1,144 @@
-.todo_list{
+.todo_list {
+  background: linear-gradient(135deg, #2d0a42, #4a0072, #990066);
+  border-radius: 8px;
+  margin-bottom: 15px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.todo_list:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.todo_list .MuiListItem-root {
+  padding: 15px 20px !important;
+}
+
+.todo_list .MuiListItemText-primary {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.todo_list .MuiListItemText-secondary {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+.todo_list button {
+  background: linear-gradient(45deg, #9c27b0, #e91e63);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  margin-right: 10px;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.todo_list button:hover {
+  background: linear-gradient(45deg, #7b1fa2, #c2185b);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+}
+
+.todo_list svg {
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.todo_list svg:hover {
+  transform: translateY(-50%) scale(1.15);
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.4));
+}
+
+/* Modal styles */
+.MuiModal-root .MuiPaper-root {
+  background: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(233, 30, 99, 0.2);
+}
+
+.MuiModal-root h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #9c27b0, #e91e63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.MuiModal-root input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.MuiModal-root input:focus {
+  outline: none;
+  border-color: #e91e63;
+  box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.2);
+}
+
+.MuiModal-root input::placeholder {
+  color: #aaa;
+}
+
+.MuiModal-root button {
+  background: linear-gradient(45deg, #9c27b0, #e91e63);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.MuiModal-root button:hover {
+  background: linear-gradient(45deg, #7b1fa2, #c2185b);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+}
+
+/* For a clean look on mobile */
+@media (max-width: 600px) {
+  .todo_list button,
+  .todo_list svg {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .todo_list {
+    padding-bottom: 10px;
     text-align: center;
+  }
+  
+  .todo_list svg:hover {
+    transform: scale(1.15);
+  }
 }

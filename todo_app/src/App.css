@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: linear-gradient(135deg, #000000, #1a0033, #4a0072, #990066);
+  /* background-color: white; */
+  background-attachment: fixed;
   min-height: 100vh;
+  padding: 20px;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin: 30px 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 40px;
+  background-color: #2d0a42;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.MuiFormControl-root {
+  width: 70%;
+  margin-right: 15px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.MuiFormControl-root .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.MuiFormControl-root .MuiInput-root {
+  color: white !important;
+}
+
+.MuiFormControl-root .MuiInput-underline:before {
+  border-bottom-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.MuiFormControl-root .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.MuiFormControl-root .MuiInput-underline:after {
+  border-bottom-color: #e91e63 !important;
+}
+
+.MuiButton-contained {
+  height: 40px !important;
+  margin-top: 16px !important;
+  background: linear-gradient(45deg, #9c27b0, #e91e63) !important;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.4) !important;
+  color: white !important;
+}
+
+.MuiButton-contained:hover {
+  background: linear-gradient(45deg, #7b1fa2, #c2185b) !important;
+}
+
+.MuiButton-contained .MuiButton-label {
+  color: white !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* For a clean look on mobile */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .MuiFormControl-root {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .MuiButton-contained {
+    width: 100%;
   }
 }

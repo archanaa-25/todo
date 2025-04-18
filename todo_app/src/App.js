@@ -31,11 +31,12 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <h1>TODO</h1>
+      <h3>Reminds Everything</h3>
       
       <form>
         <FormControl>
-          <InputLabel>✔ Write a Todo</InputLabel>
+          <InputLabel>✔ Add a Task</InputLabel>
           <Input value={input} onChange={event => setInput(event.target.value)}/>
         </FormControl>
 

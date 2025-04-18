@@ -2,7 +2,7 @@ import {List, ListItem, ListItemText, Modal, Button } from '@mui/material'
 import React, {useState} from 'react'
 import './Todo.css';
 import db from './firebase';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -40,9 +40,9 @@ function Todo(props) {
         onClose = {e => setOpen(false)}
       >
         <div className={classes.paper}>
-          <h1>Im a Modal</h1>
+          <h1>Edit Task</h1>
           <input placeholder={props.todo.todo} value={input} onChange={event => setInput(event.target.value)}/>
-          <Button onClick = {updateTodo}>Update Todo</Button>
+          <Button onClick = {updateTodo}>Update</Button>
         </div>
       </Modal>
       <List className="todo_list">
@@ -50,7 +50,7 @@ function Todo(props) {
           <ListItemText primary={props.todo.todo} secondary="Dummy deadline"/>
         </ListItem>
         <button onClick={e => setOpen(true)}>Edit</button>
-        <DeleteForeverIcon onClick={event=> {db.collection('todos').doc(props.todo.id).delete()}} />
+        <DoneRoundedIcon onClick={event=> {db.collection('todos').doc(props.todo.id).delete()}} />
       </List>
     </>
   )
