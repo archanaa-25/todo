@@ -1,6 +1,6 @@
 # ✅ TODO App - CRUD
 ## Description
-This is a responsive, real-time TODO application that allows users to manage their daily tasks effectively. Built using **React**, **Firebase Firestore**, and **Material UI**, the app provides a seamless and minimal interface for _task creation_, _editing_, and _deletion—all_ synced in real time. The app also displays the current date in a friendly format, enhancing the user experience.
+This is a responsive, real-time TODO application that allows users to manage their daily tasks effectively. Built using **React**, **Firebase Firestore**, and **Material UI**, and **deployed using Firebase**. The app provides a seamless and minimal interface for _task creation_, _editing_, and _deletion—all_ synced in real time. The app also displays the current date in a friendly format, enhancing the user experience.
 
 ## Features
 - ➕ Add tasks instantly with an input field.
